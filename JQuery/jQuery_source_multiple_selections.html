@@ -1,0 +1,32 @@
+
+<html>
+    <body>
+<div class="container">
+<div id="mybutton" class="btn btn-primary">click here for javascript</div>
+<div id="mybutton2" class="btn btn-warning">click here for jquery</div>
+<div class="row">
+<div class="col-md-6">
+<h1 class='myclickbutton'>text title </h1>
+<p>1 this is just some text</p>
+<a href="http://www.google.com">go to google</a><img src="
+http://lorempixel.com/400/200" />
+<p>2 this is just some text</p>
+</div>
+<div class="col-md-6">
+<h1>Another title</h1>
+<p>3 this is just some more text</p>
+</div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+var myparagraph =  $('p');
+console.log(myparagraph);
+for(x=0;x<myparagraph.length;x++){
+console.log(myparagraph[x].innerHTML);
+}
+});
+</script>
+</body>
+</html>

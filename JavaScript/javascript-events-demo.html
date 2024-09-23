@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        button { margin: 10px 0; padding: 5px 10px; }
+        #hoverBox { width: 200px; height: 100px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin: 10px 0; }
+        #output { margin-top: 20px; padding: 10px; background-color: #e0e0e0; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Events Demo</h1>
+    
+    <button id="clickMe">Click Me</button>
+    
+    <div id="hoverBox">Hover over me</div>
+    
+    <input type="text" id="inputField" placeholder="Type something...">
+    
+    <div id="output">Event output will appear here</div>
+
+    <script>
+        const clickButton = document.getElementById('clickMe');
+        const hoverBox = document.getElementById('hoverBox');
+        const inputField = document.getElementById('inputField');
+        const output = document.getElementById('output');
+        
+
+        // Click event
+        clickButton.addEventListener('click',()=>{           //()=>{}  this is a new version calling function
+            output.textContent = 'Button clicked!';
+        });
+
+        // Mouseover and mouseout events
+        hoverBox.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#ffcc00';
+            output.textContent = 'Mouse over the box';
+        });
+
+        hoverBox.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#f0f0f0';
+            output.textContent = 'Mouse left the box';
+        });
+
+        // Input event
+        inputField.addEventListener('input', function() {
+            output.textContent = 'Input changed: ' + this.value;
+        });
+
+        // Keydown event
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                output.textContent = 'Enter key pressed!';
+            }
+        });
+    </script>
+</body>
+</html>

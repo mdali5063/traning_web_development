@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function RegisterClick(){
+                var name = document.getElementById("txtName").value;
+                var msg = document.write("hello"+name);  // its shows next page
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            Entername: <input type="text" id="txtName">
+            <input type="button" value="Register"onclick="RegisterClick()"><br>
+            <div align ="center" id="msg"></div>
+        </form>
+    </body>
+</html>

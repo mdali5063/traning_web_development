@@ -1,0 +1,175 @@
+html,
+#page{
+    padding: 0;
+    margin: 0;
+}
+#page{
+    background-color: white;
+}
+#header,
+#top-nav{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #959595;
+    font-family: sans-serif;
+}
+#logo{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: auto;
+}
+#logo h1 a{
+    /* color: blue; */
+    text-decoration: none;
+}
+h1 a:hover{
+    color: darkgreen;
+    text-decoration: none;
+}
+#header{
+    background-color: lightgreen;
+}
+#header-inner{
+    margin: 0 auto;
+    padding: 0;
+    width: 970px;
+}
+#top-nav{
+    margin: 0 auto;
+    padding: 0;
+    height: 37px;
+    float: right;
+}
+#top-nav ul{
+    list-style: none;
+    /* padding: 0; */
+    /* height: 37px; */
+    /* float: left; */
+}
+#top-nav ul li{
+    margin: 0;
+    padding: 0 0 0 8px;
+    float: left;
+}
+#top-nav ul li a{
+    display: block;
+    margin: 0;
+    padding: 8px 20px;
+    color: green;
+    text-decoration: none;
+}
+/* #top-nav ul li.active a, */
+#top-nav ul li a:hover{
+    color: #bcce98;
+}
+#section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 25px 20px 14px 20px;
+    min-height: calc(100vh - 92px - 66px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: normal;
+    margin-top: 100px; /* Adiciona espaço extra para compensar a altura do header */
+}
+
+article{
+    background-color: rgb(251, 255, 129);
+    padding:20px;
+    margin-bottom: 20px;
+    border-radius:5px;
+}
+
+article:last-child{
+    margin-bottom: 0;
+}
+
+article h3{
+    margin: 10px 0 25px 0;
+    line-height: 24px;
+}
+
+article p{
+    margin-top: 16px;
+    line-height: 24px;
+}
+#section .card{
+    margin: 20px;
+    margin-left: 100%;
+    width: 220px;
+    height: fit-content;
+    margin: 10px 90px  10px 50px;
+    padding: 20px;
+    border: 1px solid #a02828c2;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 84%);
+    background-color: #e5d7d7;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+
+.card h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    color: #888;
+    font-size: 0.8em;
+}
+
+ footer .rapido{
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+} 
+
+.rapido p { 
+    display: flex;
+    padding-left: 24px;
+    font-size: 16px;
+}
+
+footer{
+    margin-top: auto;
+    background-color: #0026ad;
+    color: #fff;
+    padding: 24px 0px;
+    max-height: 66px;
+}
+
+.rapido p a {
+    color: white;
+}
+
+#footer .anker{
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.rapido #copyright{
+    float:left;
+}
+
+.rapido #links{
+    float:right;
+    padding: 0 20px 0 20px;
+}

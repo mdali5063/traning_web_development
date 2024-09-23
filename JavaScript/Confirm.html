@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function DeleteCircle(){
+                var x=confirm("Record will be deleted");
+                var msg=document.getElementById("message");//<div id="message"></div>
+                console.log(msg);
+                if(x==true){
+                    msg.innerText="Record deleted";
+                }
+                else{
+                    msg.innerHTML="<font color='red'>action Cancelled</font>";
+                }
+            }
+        </script>
+    </head>
+    <body onload="DeleteCircle()">
+        <div id="message">
+
+        </div>
+    </body>
+</html>

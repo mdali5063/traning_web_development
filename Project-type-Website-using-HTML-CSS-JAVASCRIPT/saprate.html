@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Developer</title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <title>JavaScript Built-in Methods Demo</title>
+    <style>
+      body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+      button { margin: 10px 5px; padding: 5px 10px; }
+      #output { margin-top: 20px; padding: 10px; background-color: #f0f0f0; white-space: pre-wrap; }
+  </style>
+  <title>Browser Objects Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+    button { margin: 10px 0; padding: 5px 10px; }
+    #output2 { margin-top: 20px; padding: 10px; background-color: #f0f0f0; white-space: pre-wrap; }
+</style>
+<title>JavaScript Events Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        button { margin: 10px 0; padding: 5px 10px; }
+        #hoverBox { width: 200px; height: 100px; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin: 10px 0; }
+        #output3 { margin-top: 20px; padding: 10px; background-color: #e0e0e0; }
+    </style>
+  </head>
+  <body>
+
+    <!-- HEADER SECTION-->
+
+      <header class="header_area">
+        <div class="header">
+          <div class="logo">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="right_header_area">
+            <div class="social_area">
+              <ul>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+              </ul>
+            </div>
+            <div class="hamburger">
+              <ul>
+                <li>MENU</li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="far fa-bars"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+          <nav id="main_menu">
+            <ul id="menu">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Calender</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+            
+          </nav>
+        
+      </header>
+
+    <!-- HEADER SECTION  END-->
+
+    <!-- BANNER SECTION-->
+    
+      <section class="banner_area">
+        <h2>Enterprise Marketing and Customer Experience</h1>
+        <h3>LEVERAGE DATA TO DRIVE PERSONALIZATION AT SCALE</h2>
+        <div class="banner_btn">
+          <button class="btn1">The Global Transition</button>
+          <button class="btn2"><i class="fas fa-caret-circle-right"></i> Explore</button>
+        </div>
+      </section>
+
+    <!-- BANNER SECTION END-->
+
+
+
+    <!-- EVENT SECTION-->
+
+      <section class="event_area">
+        <div class="pic-1">
+          <img src="images/even-2.jpg" alt="">
+        </div>
+        <div class="pic-2">
+          <img src="images/event-1.png" alt="">
+        </div>
+        <div class="event_text">
+          <h1>THE DIGITAL SAVVY PHARMA MARKETER 2020</h1>
+          <h3>“Must have tool for every pharma marketer”</h3>
+          <button><i class="fas fa-caret-circle-right"></i> DOWNLOAD</button>
+        </div>
+        
+        
+      </section>
+
+
+    <!-- EVENT SECTION  END-->
+
+
+    <!-- SERVICE SECTION-->
+
+    <section class="service_area">
+      <div class="title">
+        <h2>COMPANY</h2>
+        <h4>Services</h4>
+      </div>
+
+      <div class="main_service">
+        <div class="childservice_main">
+          <div class="child_service">
+            <h3 class="left_servicetext_h3">Customer Experience</h3>
+            <h5 class="left_servicetext_h5">A must have tool for pharma marketers to gain insights 
+              into the latest channel preferences, marketing budget allocations, technology utilization</h5>
+          </div>
+          <div class="service-img">
+            <img class="service_img" src="images/customer.png" alt="">
+          </div>
+        </div>
+
+        <div class="childservice_main">
+            <div class="service-img">
+              <img class="service_img" src="images/co.png" alt="">
+            </div>
+            <div class="child_service">
+            <h3 class="right_servicetext_h3">Co-commercialization</h3>
+            <h5 class="right_servicetext_h5">A must have tool for pharma marketers to gain insights 
+              into the latest channel preferences, marketing budget allocations, technology utilization</h5>
+          </div>
+        </div>
+
+        <div class="childservice_main">
+          <div class="child_service">
+            <h3 class="left_servicetext_h3">Data and Analytics</h3>
+            <h5 class="left_servicetext_h5">A must have tool for pharma marketers to gain insights 
+              into the latest channel preferences, marketing budget allocations, technology utilization</h5>
+          </div>
+          <div class="service-img">
+            <img class="service_img" src="images/data.png" alt="">
+          </div>
+        </div>
+
+        <div class="childservice_main">
+          <div class="service-img">
+            <img class="service_img" src="images/r&d.png" alt="">
+          </div>
+          <div class="child_service">
+          <h3 class="right_servicetext_h3">R&D / Medical Transformation</h3>
+          <h5 class="right_servicetext_h5">A must have tool for pharma marketers to gain insights 
+            into the latest channel preferences, marketing budget allocations, technology utilization</h5>
+        </div>
+      </div>
+
+        <div class="childservice_main">
+          <div class="child_service">
+            <h3 class="left_servicetext_h3">Digital Transformation</h3>
+            <h5 class="left_servicetext_h5">A must have tool for pharma marketers to gain insights 
+              into the latest channel preferences, marketing budget allocations, technology utilization</h5>
+          </div>
+          <div class="service-img">
+            <img class="service_img" src="images/layer13.png" alt="">
+          </div>
+        </div>
+
+
+        <div class="childservice_main">
+          <div class="service-img">
+            <img class="service_img" src="images/omni.png" alt="">
+          </div>
+          <div class="child_service">
+          <h3 class="right_servicetext_h3">Omnipresence CXM Platform</h3>
+          <h5 class="right_servicetext_h5">A must have tool for pharma marketers to gain insights 
+            into the latest channel preferences, marketing budget allocations, technology utilization</h5>
+        </div>
+      </div>
+
+          
+
+      </div>
+    </section>
+
+    <!-- SERVICE SECTION END-->
+
+
+    <!--  TESTIMONIAL -->
+
+    <section class="testimonial_area">
+      <div class="testimonial_pic">
+        <img src="images/testimonial.jpg" alt="">
+      </div>
+      <div class="testimonial_title">
+        <h1 class="testimonial_text">INSPIRATIONAL TESTIMONIAL</h1>
+      </div>
+      <div class="testimonial_flex">
+        <div class="testimonial_grid">
+          <img src="images/president-vp.png" alt="">
+          <h5>As the President, he is 
+            responsible for new strategic 
+            initiatives.</h5>
+          <h3>President</h3>
+        </div>
+        <div class="testimonial_grid">
+          <img src="images/ceo.png" alt="">
+          <h5>As one of the cofounder and the CEO, he is 
+            responsible for the company's 
+            strategy.</h5>
+          <h3>CEO</h3>
+        </div>
+        <div class="testimonial_grid">
+          <img src="images/president-vp.png" alt="">
+          <h5>Is 
+            responsible for global business development and strategic account 
+            management.</h5>
+          <h3>Executive VP</h3>
+        </div>
+      </div>
+      
+    </section>
+
+
+    <!--  TESTIMONIAL END -->
+
+
+    <!--  RECENT BLOG  -->
+
+      <section class="recent_blog">
+        <div class="recentblog_title">
+          <h1>RECENT BLOG</h1>
+          <h4>Our Blog</h4>
+        </div>
+        <div class="main_blog_grid">
+          <div class="blog_grid">
+            <img src="images/recentblog.jpg" alt="">
+            <div class="blog_dates">
+              <h2>18</h2>
+              <h5>January</h5>
+              <h5>2019</h5>
+            </div>
+            <div class="blog_p">
+              <h3>Press Release</h3>
+              <p>Indegene Acquires DT Associates, Provides End-To-End Enterprise Solution for
+                Customer Excellence — from Consulting to Operations</p>
+            </div>
+          </div>
+
+          <div class="blog_grid">
+            <img src="images/recentblog.jpg" alt="">
+            <div class="blog_dates">
+              <h2>18</h2>
+              <h5>January</h5>
+              <h5>2019</h5>
+            </div>
+            <div class="blog_p">
+              <h3>Webinars</h3>
+              <p>Healthy Workplaces Conference & Awards 2019 - Indegene enters "Platinum 
+                League of Healthy Workplaces"</p>
+            </div>
+          </div>
+
+          <div class="blog_grid">
+            <img src="images/recentblog.jpg" alt="">
+            <div class="blog_dates">
+              <h2>18</h2>
+              <h5>January</h5>
+              <h5>2019</h5>
+            </div>
+            <div class="blog_p">
+              <h3>Press Release</h3>
+              <p>Exemplary PV solution to augment efficiency in small and medium size pharma 
+                companies</p>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+
+  <!--  RECENT BLOG  -->
+
+  <!--  NEWSLETTER  -->
+      <section class="newsletter_area">
+        <h1>NEWSLETTER</h1>
+        <div class="search_area">
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Enter email address"><input type="submit" name="" value="Subscribe">
+          </form>
+        </div>
+        <div class="footer_area">
+          <span>&#169; 2019 Indegene. All rights reserved | Contact Us | Privacy Policy | CSR Policy</span>
+        </div>
+
+      </section>
+      
+      <!--  NEWSLETTER END -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="main.js"></script>
+
+  <div>
+    <h1>JavaScript Built-in Methods Demo</h1>
+    
+    <button onclick="demonstrateMath()">Math Methods</button>
+    <button onclick="demonstrateString()">String Methods</button>
+    <button onclick="demonstrateDate()">Date Methods</button>
+    <button onclick="demonstrateArray()">Array Methods</button>
+    
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        function demonstrateMath() {
+            let info = "Math Object Methods:\n";
+            info += `Math.abs(-5): ${Math.abs(-5)}\n`;
+            info += `Math.ceil(4.3): ${Math.ceil(4.3)}\n`;
+            info += `Math.floor(4.7): ${Math.floor(4.7)}\n`;
+            info += `Math.round(4.5): ${Math.round(4.5)}\n`;
+            info += `Math.max(1, 3, 2): ${Math.max(1, 3, 2)}\n`;
+            info += `Math.min(1, 3, 2): ${Math.min(1, 3, 2)}\n`;
+            info += `Math.pow(2, 3): ${Math.pow(2, 3)}\n`;
+            info += `Math.sqrt(16): ${Math.sqrt(16)}\n`;
+            info += `Math.random(): ${Math.random()}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateString() {
+            const str = "Hello, World!";
+            let info = "String Methods:\n";
+            info += `Original string: "${str}"\n`;
+            info += `str.length: ${str.length}\n`;
+            info += `str.toUpperCase(): "${str.toUpperCase()}"\n`;
+            info += `str.toLowerCase(): "${str.toLowerCase()}"\n`;
+            info += `str.charAt(7): "${str.charAt(7)}"\n`;
+            info += `str.indexOf("World"): ${str.indexOf("World")}\n`;
+            info += `str.substring(0, 5): "${str.substring(0, 5)}"\n`;
+            info += `str.slice(-6): "${str.slice(-6)}"\n`;
+            info += `str.replace("World", "JavaScript"): "${str.replace("World", "JavaScript")}"\n`;
+            info += `str.split(", "): ${JSON.stringify(str.split(", "))}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateDate() {
+            const now = new Date();
+            const futureDate = new Date(2025, 0, 1);  // January 1, 2025
+            let info = "Date Methods:\n";
+            info += `Current date: ${now}\n`;
+            info += `now.getFullYear(): ${now.getFullYear()}\n`;
+            info += `now.getMonth(): ${now.getMonth()} (0-11, where 0 is January)\n`;
+            info += `now.getDate(): ${now.getDate()}\n`;
+            info += `now.getDay(): ${now.getDay()} (0-6, where 0 is Sunday)\n`;
+            info += `now.getHours(): ${now.getHours()}\n`;
+            info += `now.getMinutes(): ${now.getMinutes()}\n`;
+            info += `now.getTime(): ${now.getTime()} (milliseconds since Jan 1, 1970)\n`;
+            info += `Future date: ${futureDate}\n`;
+            info += `Days until Jan 1, 2025: ${Math.ceil((futureDate - now) / (1000 * 60 * 60 * 24))}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateArray() {
+            const arr = [1, 2, 3, 4, 5];
+            let info = "Array Methods:\n";
+            info += `Original array: ${JSON.stringify(arr)}\n`;
+            info += `arr.length: ${arr.length}\n`;
+            info += `arr.push(6): ${arr.push(6)}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.pop(): ${arr.pop()}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.unshift(0): ${arr.unshift(0)}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.shift(): ${arr.shift()}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.indexOf(3): ${arr.indexOf(3)}\n`;
+            info += `arr.slice(1, 3): ${JSON.stringify(arr.slice(1, 3))}\n`;
+            info += `arr.reverse(): ${JSON.stringify(arr.reverse())}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.join("-"): ${arr.join("-")}\n`;
+            info += `arr.map(x => x * 2): ${JSON.stringify(arr.map(x => x * 2))}\n`;
+            info += `arr.filter(x => x > 2): ${JSON.stringify(arr.filter(x => x > 2))}\n`;
+            info += `arr.reduce((acc, cur) => acc + cur, 0): ${arr.reduce((acc, cur) => acc + cur, 0)}\n`;
+            output.textContent = info;
+        }
+    </script>
+    </div>
+    <div>
+      <h1>Browser Objects Demo</h1>
+    
+    <button onclick="demonstrateWindow()">Window Object</button>
+    <button onclick="demonstrateLocation()">Location Object</button>
+    <button onclick="demonstrateHistory()">History Object</button>
+    <button onclick="demonstrateNavigator()">Navigator Object</button>
+    <button onclick="demonstrateDocument()">Document Object</button>
+    
+    <div id="output2"></div>
+
+    <script>
+        const output2 = document.getElementById('output2');
+
+        function demonstrateWindow() {
+            let info = "Window Object Properties:\n";
+            info += `Inner Width: ${window.innerWidth}px\n`;
+            info += `Inner Height: ${window.innerHeight}px\n`;
+            info += `Screen X: ${window.screenX}\n`;
+            info += `Screen Y: ${window.screenY}\n`;
+            info += `Page YOffset: ${window.pageYOffset}\n`;
+            output2.textContent = info;
+
+            // Demonstrate window methods
+            window.setTimeout(() => {
+                output2.textContent += "\nThis message appeared after 2 seconds using window.setTimeout()";
+            }, 2000);
+        }
+
+        function demonstrateLocation() {
+            let info = "Location Object Properties:\n";
+            info += `URL: ${location.href}\n`;
+            info += `Protocol: ${location.protocol}\n`;
+            info += `Port: ${location.port}\n`;
+            info += `Host: ${location.host}\n`;
+            info += `Pathname: ${location.pathname}\n`;
+            info += `Search: ${location.search}\n`;
+            output2.textContent = info;
+
+            // Uncomment to demonstrate location method (careful, it will reload the page)
+            // location.reload();
+        }
+
+        function demonstrateHistory() {
+            let info = "History Object Properties:\n";
+            info += `Length: ${history.length}\n\n`;
+            info += "History methods (not executed to avoid navigation):\n";
+            info += "history.back() - Go back one page\n";
+            info += "history.forward() - Go forward one page\n";
+            info += "history.go(-2) - Go back two pages\n";
+            output2.textContent = info;
+        }
+
+        function demonstrateNavigator() {
+            let info = "Navigator Object Properties:\n";
+            info += `User Agent: ${navigator.userAgent}\n`;
+            info += `Platform: ${navigator.platform}\n`;
+            info += `Language: ${navigator.language}\n`;
+            info += `Online: ${navigator.onLine}\n`;
+            info += `Cookies Enabled: ${navigator.cookieEnabled}\n`;
+            output2.textContent = info;
+        }
+
+        function demonstrateDocument() {
+            let info = "Document Object Properties:\n";
+            info += `Title: ${document.title}\n`;
+            info += `URL: ${document.URL}\n`;
+            info += `Domain: ${document.domain}\n`;
+            info += `Last Modified: ${document.lastModified}\n\n`;
+            info += "Document methods:\n";
+            info += `Number of images: ${document.images.length}\n`;
+            info += `Number of links: ${document.links.length}\n`;
+            info += `Number of forms: ${document.forms.length}\n`;
+            
+            // Demonstrate document creation and manipulation
+            const newParagraph = document.createElement('p');
+            newParagraph.innerText = "This paragraph was created using document.createElement()";
+            document.body.appendChild(newParagraph);
+            
+            info += "\nA new paragraph has been added to the bottom of the page.";
+            output2.innerText = info;
+        }
+    </script>
+    </div>
+    <div>
+      <h1>JavaScript Events Demo</h1>
+    
+    <button id="clickMe">Click Me</button>
+    
+    <div id="hoverBox">Hover over me</div>
+    
+    <input type="text" id="inputField" placeholder="Type something...">
+    
+    <div id="output3">Event output will appear here</div>
+
+    <script>
+        const clickButton = document.getElementById('clickMe');
+        const hoverBox = document.getElementById('hoverBox');
+        const inputField = document.getElementById('inputField');
+        const output3 = document.getElementById('output3');
+        
+
+        // Click event
+        clickButton.addEventListener('click',function(){           //()=>{}  this is a new version calling function
+            output3.textContent = 'Button clicked!';
+        });
+
+        // Mouseover and mouseout events
+        hoverBox.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#ffcc00';
+            output3.textContent = 'Mouse over the box';
+        });
+
+        hoverBox.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#f0f0f0';
+            output3.textContent = 'Mouse left the box';
+        });
+
+        // Input event
+        inputField.addEventListener('input', function() {
+            output3.textContent = 'Input changed: ' + this.value;
+        });
+
+        // Keydown event
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                output3.textContent = 'Enter key pressed!';
+            }
+        });
+    </script>
+    </div>
+  </body>
+</html>

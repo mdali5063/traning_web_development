@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" language="javascript">
+        function bodyload(){
+            document.getElementById("ali").src="Sun.jpeg";
+            document.getElementById("txtRegister").value="Register";
+            // window.document.forms(0).elements(1).value="Mohammed Ali"
+            document.getElementById("fName").value="Mohammed Ali";
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <img id="ali" width="500" height="300">
+    </div>
+    <div>
+        <form>
+            <label for="fname">Name</label>
+            <input type="text" id="fName" name="fali">
+            <input type="button" id="txtRegister">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+        const output = document.getElementById('output');
+        function demonstrateMath() {
+            let info = "Math Object Methods:\n";
+            info += `Math.abs(-5): ${Math.abs(-5)}\n`;
+            info += `Math.ceil(4.3): ${Math.ceil(4.3)}\n`;
+            info += `Math.floor(4.7): ${Math.floor(4.7)}\n`;
+            info += `Math.round(4.5): ${Math.round(4.5)}\n`;
+            info += `Math.max(1, 3, 2): ${Math.max(1, 3, 2)}\n`;
+            info += `Math.min(1, 3, 2): ${Math.min(1, 3, 2)}\n`;
+            info += `Math.pow(2, 3): ${Math.pow(2, 3)}\n`;
+            info += `Math.sqrt(16): ${Math.sqrt(16)}\n`;
+            info += `Math.random(): ${Math.random()}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateString() {
+            const str = "Hello, World!";
+            let info = "String Methods:\n";
+            info += `Original string: "${str}"\n`;
+            info += `str.length: ${str.length}\n`;
+            info += `str.toUpperCase(): "${str.toUpperCase()}"\n`;
+            info += `str.toLowerCase(): "${str.toLowerCase()}"\n`;
+            info += `str.charAt(7): "${str.charAt(7)}"\n`;
+            info += `str.indexOf("World"): ${str.indexOf("World")}\n`;
+            info += `str.substring(0, 5): "${str.substring(0, 5)}"\n`;
+            info += `str.slice(-6): "${str.slice(-6)}"\n`;
+            info += `str.replace("World", "JavaScript"): "${str.replace("World", "JavaScript")}"\n`;
+            info += `str.split(", "): ${JSON.stringify(str.split(", "))}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateDate() {
+            const now = new Date();
+            const futureDate = new Date(2025, 0, 1);  // January 1, 2025
+            let info = "Date Methods:\n";
+            info += `Current date: ${now}\n`;
+            info += `now.getFullYear(): ${now.getFullYear()}\n`;
+            info += `now.getMonth(): ${now.getMonth()} (0-11, where 0 is January)\n`;
+            info += `now.getDate(): ${now.getDate()}\n`;
+            info += `now.getDay(): ${now.getDay()} (0-6, where 0 is Sunday)\n`;
+            info += `now.getHours(): ${now.getHours()}\n`;
+            info += `now.getMinutes(): ${now.getMinutes()}\n`;
+            info += `now.getTime(): ${now.getTime()} (milliseconds since Jan 1, 1970)\n`;
+            info += `Future date: ${futureDate}\n`;
+            info += `Days until Jan 1, 2025: ${Math.ceil((futureDate - now) / (1000 * 60 * 60 * 24))}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateArray() {
+            const arr = [1, 2, 3, 4, 5];
+            let info = "Array Methods:\n";
+            info += `Original array: ${JSON.stringify(arr)}\n`;
+            info += `arr.length: ${arr.length}\n`;
+            info += `arr.push(6): ${arr.push(6)}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.pop(): ${arr.pop()}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.unshift(0): ${arr.unshift(0)}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.shift(): ${arr.shift()}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.indexOf(3): ${arr.indexOf(3)}\n`;
+            info += `arr.slice(1, 3): ${JSON.stringify(arr.slice(1, 3))}\n`;
+            info += `arr.reverse(): ${JSON.stringify(arr.reverse())}, now arr is ${JSON.stringify(arr)}\n`;
+            info += `arr.join("-"): ${arr.join("-")}\n`;
+            info += `arr.map(x => x * 2): ${JSON.stringify(arr.map(x => x * 2))}\n`;
+            info += `arr.filter(x => x > 2): ${JSON.stringify(arr.filter(x => x > 2))}\n`;
+            info += `arr.reduce((acc, cur) => acc + cur, 0): ${arr.reduce((acc, cur) => acc + cur, 0)}\n`;
+            output.textContent = info;
+        }
+
+        const output2 = document.getElementById('output2');
+        function demonstrateWindow() {
+            let info = "Window Object Properties:\n";
+            info += `Inner Width: ${window.innerWidth}px\n`;
+            info += `Inner Height: ${window.innerHeight}px\n`;
+            info += `Screen X: ${window.screenX}\n`;
+            info += `Screen Y: ${window.screenY}\n`;
+            info += `Page YOffset: ${window.pageYOffset}\n`;
+            output2.textContent = info;
+
+            // Demonstrate window methods
+            window.setTimeout(() => {
+                output2.textContent += "\nThis message appeared after 2 seconds using window.setTimeout()";
+            }, 2000);
+        }
+
+        function demonstrateLocation() {
+            let info = "Location Object Properties:\n";
+            info += `URL: ${location.href}\n`;
+            info += `Protocol: ${location.protocol}\n`;
+            info += `Port: ${location.port}\n`;
+            info += `Host: ${location.host}\n`;
+            info += `Pathname: ${location.pathname}\n`;
+            info += `Search: ${location.search}\n`;
+            output2.textContent = info;
+
+            // Uncomment to demonstrate location method (careful, it will reload the page)
+            // location.reload();
+        }
+
+        function demonstrateHistory() {
+            let info = "History Object Properties:\n";
+            info += `Length: ${history.length}\n\n`;
+            info += "History methods (not executed to avoid navigation):\n";
+            info += "history.back() - Go back one page\n";
+            info += "history.forward() - Go forward one page\n";
+            info += "history.go(-2) - Go back two pages\n";
+            output2.textContent = info;
+        }
+
+        function demonstrateNavigator() {
+            let info = "Navigator Object Properties:\n";
+            info += `User Agent: ${navigator.userAgent}\n`;
+            info += `Platform: ${navigator.platform}\n`;
+            info += `Language: ${navigator.language}\n`;
+            info += `Online: ${navigator.onLine}\n`;
+            info += `Cookies Enabled: ${navigator.cookieEnabled}\n`;
+            output2.textContent = info;
+        }
+
+        function demonstrateDocument() {
+            let info = "Document Object Properties:\n";
+            info += `Title: ${document.title}\n`;
+            info += `URL: ${document.URL}\n`;
+            info += `Domain: ${document.domain}\n`;
+            info += `Last Modified: ${document.lastModified}\n\n`;
+            info += "Document methods:\n";
+            info += `Number of images: ${document.images.length}\n`;
+            info += `Number of links: ${document.links.length}\n`;
+            info += `Number of forms: ${document.forms.length}\n`;
+            
+            // Demonstrate document creation and manipulation
+            const newParagraph = document.createElement('p');
+            newParagraph.innerText = "This paragraph was created using document.createElement()";
+            document.body.appendChild(newParagraph);
+            
+            info += "\nA new paragraph has been added to the bottom of the page.";
+            output2.innerText = info;
+        }
+
+        
+        const clickButton = document.getElementById('clickMe');
+        const hoverBox = document.getElementById('hoverBox');
+        const inputField = document.getElementById('inputField');
+        const output3 = document.getElementById('output3');
+          // Click event
+        clickButton.addEventListener('click',function(){           
+            output3.textContent = 'Button clicked!';
+        });
+
+        // Mouseover and mouseout events
+        hoverBox.addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#ffcc00';
+            output3.textContent = 'Mouse over the box';
+        });
+
+        hoverBox.addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#f0f0f0';
+            output3.textContent = 'Mouse left the box';
+        });
+
+        // Input event
+        inputField.addEventListener('input', function() {
+            output3.textContent = 'Input changed: ' + this.value;
+        });
+
+        // Keydown event
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                output3.textContent = 'Enter key pressed!';
+            }
+        });

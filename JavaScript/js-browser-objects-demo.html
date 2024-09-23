@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Objects Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        button { margin: 10px 0; padding: 5px 10px; }
+        #output { margin-top: 20px; padding: 10px; background-color: #f0f0f0; white-space: pre-wrap; }
+    </style>
+</head>
+<body>
+    <h1>Browser Objects Demo</h1>
+    
+    <button onclick="demonstrateWindow()">Window Object</button>
+    <button onclick="demonstrateLocation()">Location Object</button>
+    <button onclick="demonstrateHistory()">History Object</button>
+    <button onclick="demonstrateNavigator()">Navigator Object</button>
+    <button onclick="demonstrateDocument()">Document Object</button>
+    
+    <div id="output"></div>
+
+    <script>
+        const output = document.getElementById('output');
+
+        function demonstrateWindow() {
+            let info = "Window Object Properties:\n";
+            info += `Inner Width: ${window.innerWidth}px\n`;
+            info += `Inner Height: ${window.innerHeight}px\n`;
+            info += `Screen X: ${window.screenX}\n`;
+            info += `Screen Y: ${window.screenY}\n`;
+            info += `Page YOffset: ${window.pageYOffset}\n`;
+            output.textContent = info;
+
+            // Demonstrate window methods
+            window.setTimeout(() => {
+                output.textContent += "\nThis message appeared after 2 seconds using window.setTimeout()";
+            }, 2000);
+        }
+
+        function demonstrateLocation() {
+            let info = "Location Object Properties:\n";
+            info += `URL: ${location.href}\n`;
+            info += `Protocol: ${location.protocol}\n`;
+            info += `Port: ${location.port}\n`;
+            info += `Host: ${location.host}\n`;
+            info += `Pathname: ${location.pathname}\n`;
+            info += `Search: ${location.search}\n`;
+            output.textContent = info;
+
+            // Uncomment to demonstrate location method (careful, it will reload the page)
+            // location.reload();
+        }
+
+        function demonstrateHistory() {
+            let info = "History Object Properties:\n";
+            info += `Length: ${history.length}\n\n`;
+            info += "History methods (not executed to avoid navigation):\n";
+            info += "history.back() - Go back one page\n";
+            info += "history.forward() - Go forward one page\n";
+            info += "history.go(-2) - Go back two pages\n";
+            output.textContent = info;
+        }
+
+        function demonstrateNavigator() {
+            let info = "Navigator Object Properties:\n";
+            info += `User Agent: ${navigator.userAgent}\n`;
+            info += `Platform: ${navigator.platform}\n`;
+            info += `Language: ${navigator.language}\n`;
+            info += `Online: ${navigator.onLine}\n`;
+            info += `Cookies Enabled: ${navigator.cookieEnabled}\n`;
+            output.textContent = info;
+        }
+
+        function demonstrateDocument() {
+            let info = "Document Object Properties:\n";
+            info += `Title: ${document.title}\n`;
+            info += `URL: ${document.URL}\n`;
+            info += `Domain: ${document.domain}\n`;
+            info += `Last Modified: ${document.lastModified}\n\n`;
+            info += "Document methods:\n";
+            info += `Number of images: ${document.images.length}\n`;
+            info += `Number of links: ${document.links.length}\n`;
+            info += `Number of forms: ${document.forms.length}\n`;
+            
+            // Demonstrate document creation and manipulation
+            const newParagraph = document.createElement('p');
+            newParagraph.innerText = "This paragraph was created using document.createElement()";
+            document.body.appendChild(newParagraph);
+            
+            info += "\nA new paragraph has been added to the bottom of the page.";
+            output.innerText = info;
+        }
+    </script>
+</body>
+</html>
